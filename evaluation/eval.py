@@ -360,7 +360,7 @@ def eval_file(path, outpath):
 if __name__ == '__main__':
 
     path = "../data/released_data.json"
-    outdir = f"./evaluation_results/tot-{model_name}"
+    outdir = f"/data/evaluation_results/tot-{model_name}"
 
     outdir += f'{args.extra_info}'
     outpath = f"{outdir}/gen_res.json"
