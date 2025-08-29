@@ -41,7 +41,8 @@ def create_model_tokenizer(model_path, tokenizer_path):
         load_in_8bit=False,
         torch_dtype=load_type,
         trust_remote_code=True,
-        attn_implementation='flash_attention_2'
+        attn_implementation='sdap'
+        # attn_implementation='flash_attention_2'
     )
 
     model = model.eval().to(device)
